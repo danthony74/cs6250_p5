@@ -31,7 +31,7 @@ parser.add_argument('--sleep', default=3, type=int)
 args = parser.parse_args()
 
 FLAGS_rogue_as = args.rogue
-ROGUE_AS_NAME = 'R4'
+ROGUE_AS_NAME = 'R6'
 
 def log(s, col="green"):
     print(T.colored(s, col))
@@ -72,7 +72,7 @@ class SimpleTopo(Topo):
         # Add default members to class.
         super(SimpleTopo, self ).__init__()
         num_hosts_per_as = 2
-        num_ases = 3
+        num_ases = 5
         num_hosts = num_hosts_per_as * num_ases
         # The topology has one router per AS
         routers = []
